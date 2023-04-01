@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EyeShadows!</title>
+
+    <style>
+        body {
+            background: rgb(173, 173, 173);
+        }
+        .container {
+            margin: 25px 190px;
+            padding: 0.8em 3em;
+            color: #e5e5e5;
+            font-size: 1em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(to right, #868F8D -52%, #596176 21%);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #e5e5e5;
+        }
+        h2 {
+            font-weight: 400;
+            font-family: cursive;
+        }
+        hr {
+            border-color: #15b7b9;
+        }
+        .eyes {
+            font-size: 2em;
+            font-weight: 600;
+            color: #15b7b9;
+        }
+        .btn, img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            height: 30rem;
+        }
+        p, ul {
+            line-height: 1.6em;
+        }
+        .first-p {
+            margin-top: 3em;
+        }
+        ul {
+            border-left: 2px solid #15b7b9;
+            margin-left: 1.8em;
+            
+        }
+        a {
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            border-bottom: 5px dotted #15b7b9;
+            color: #f57170;
+
+        }
+        .btn {
+            font-weight: bolder;
+            padding: 0.4em 1em;
+            font-size: 1.5em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            color: #e5e5e5;
+            border-color: #e5e5e5;
+            box-shadow: 5px 5px 2px -2px rgb(46, 46, 46);
+            background-color: #15b7b9;
+            transition: all 0.4s ease-in;
+            border-radius: 2px;
+            border-style: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    <h1>EYESHADOWS</h1>
+    <hr>
+    <h2>For Popping Eyes</h2>
+    <hr>
+
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/941/original/eyes_palette.jpeg?1650071343" alt="Eyeshadow palette">
+    <p class="first-p"> 
+           <span class="eyes"><em>Eyeshadow </em></span> is a coloured cosmetic applied primarily to the eyelids to
+            make the wearer's eyes stand out or look more attractive. Eye shadow
+            can also be applied under eyes ,cheeks or to brow bones.<br>
+
+            Eye shadow can :
+    </p>
+
+    <ul>
+                <li>Add depth and dimension to one's eyes.</li>
+                <li>Complement one's eye color.</li>
+                <li>Make one's eyes appear larger.</li>
+                <li>Draw attention to the eyes. </li>
+    </ul>
+     
+    <p>
+            Eye shadow comes in many different colors and textures. It is
+            usually made from a powder but can also be found in liquid, pencil, 
+            cream or mousse form.<br>
+    
+        
+    </p>
+    <a href="https://www.beautyanswered.com/what-is-eyeshadow.htm"><strong>Learn More</strong></a>            
+    <button class="btn">Check Out New Palettes</button>
+    </div>
+
+
+    <script>
+       let button = document.querySelector(".btn");
+
+       button.addEventListener("click", myFunc);
+
+       function myFunc() {
+            let name = prompt("Your name please");
+            let palette = prompt("Do you like 'Pigmented' or 'Neutral' palette?");
+
+            if ( palette === "Pigmented" || palette === "pigmented") {
+
+                alert("Welcome " + name + " ," + " We will send you a Pigmented Sample to try out. Thanks.");
+            }
+            else {
+                alert("Hi there " + name + " ," + " Neutral Sample on your way. Thanks.");
+            }
+       }
+    
+    </script>
+</body>
+</html>
